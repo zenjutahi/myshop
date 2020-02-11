@@ -1,8 +1,8 @@
-from celery import task
+# from celery import task
 from django.core.mail import send_mail
 from .models import Order
 
-@task
+# @task
 def order_created(order_id):
 	"""
 	Task to send an e-mail notification when an order is successfully created
@@ -12,6 +12,6 @@ def order_created(order_id):
 	message = 'Dear {}, \n\nYou have successfully placed an order.\
 				Your order id is {}.'.format(oredr.first_name, order.id)
 
-	mail_sent = send_mail(subject, message, 
+	mail_sent = send_mail(subject, message,
 						'admin@my_shop.com', [order.email])
 	return mail_sent

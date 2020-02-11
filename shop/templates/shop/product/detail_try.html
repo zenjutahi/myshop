@@ -60,11 +60,11 @@
                     {% if cart|length > 0 %}
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <button class="btn btn-primary btn-sm"><i class="fa fa-cart-plus"></i> View your cart :</button>  
+                            <button class="btn btn-primary btn-sm"><i class="fa fa-cart-plus"></i> View your cart :</button>
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
-                                    <div class="text-center link-block text-navy"> 
+                                    <div class="text-center link-block text-navy">
                                             <a href="{% url "cart:cart_detail" %}">
                                                 <h3>You have selected {{ total_items }} item{{ total_items|pluralize }}, a total of Ksh{{ cart.get_total_price }}</h3>
                                             </a>
@@ -75,9 +75,9 @@
                     {% else %}
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <button class="btn btn-primary btn-sm"><i class="fa fa-cart-plus"></i> Your cart is empty :</button> 
+                            <button class="btn btn-primary btn-sm"><i class="fa fa-cart-plus"></i> Your cart is empty :</button>
                         </a>
-                    </li>  
+                    </li>
                     {% endif %}
                     {% endwith %}
                 </ul>
@@ -105,7 +105,7 @@
                                 <div class="col-md-5">
 
 
-                                    <div class="item gallery"">
+                                    <div class="item gallery">
 
                                         <div >
                                             <img alt="image"  class="img-responsive" src="{% if product.image %}{{ product.image.url }}
@@ -140,7 +140,7 @@
                                                 {{ cart_product_form }}
                                                 {% csrf_token %}
                                                 <button class="btn btn-primary btn-sm" type="submit"> <i class="fa fa-cart-plus"></i> Add to cart</button>
-                                            </form>        
+                                            </form>
                                         </div>
                                     </div>
 
@@ -154,7 +154,7 @@
                             <span class="pull-right">
                                 Full stock - <i class="fa fa-clock-o"></i> 14.04.2016 10:04 pm
                             </span>
-                            The generated Lorem Ipsum is therefore always free
+                            This is your One stop Shop Online
                         </div>
                     </div>
 
@@ -167,10 +167,10 @@
         </div>
         <div class="footer">
             <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
+                Contact Zenj Inc at: <strong>+254 722 905 016</strong>.
             </div>
             <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
+                <strong>Copyright</strong> Zeny Inc &copy; 2018-Present
             </div>
         </div>
 

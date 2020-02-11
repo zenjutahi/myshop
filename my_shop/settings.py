@@ -15,7 +15,17 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+# 
+# from celery import Celery
+#
+# celery = Celery(broker="amqp://guest:guest@127.0.0.1:5672//")
+#
+# celery.conf.update(
+#     CELERY_DEFAULT_QUEUE = "my_shop",
+#     CELERY_DEFAULT_EXCHANGE = "my_shop",
+#     CELERY_DEFAULT_EXCHANGE_TYPE = "my_shop",
+#     CELERY_DEFAULT_ROUTING_KEY = "my_shop",
+# )
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
