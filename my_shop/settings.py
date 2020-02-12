@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'my_shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'zeus_core',
+        'NAME': 'zenjy_core',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
