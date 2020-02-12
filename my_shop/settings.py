@@ -35,7 +35,7 @@ SECRET_KEY = '(u4st5#pl-yc@pl-sl9c&2l#1z0jht!y3=wq_4y(s44t!x)qwc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zenjy-shop.herokuapp.com']
 
 
 # Application definition
