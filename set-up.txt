@@ -1,0 +1,4 @@
+# settings.py
+
+STATIC_URL = 'my_shop/static/' when local
+STATIC_URL = '/static/' in heroku
