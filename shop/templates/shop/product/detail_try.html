@@ -45,21 +45,16 @@
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <li>
-                        <span class="m-r-sm text-muted welcome-message">Welcome To ChillBuds 😃.</span>
+                        <span class="m-r-sm text-muted welcome-message">ChillBuds 😃.</span>
                     </li>
                     {% with total_items=cart|length %}
                     {% if cart|length > 0 %}
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <button class="btn btn-primary btn-sm"><i class="fa fa-cart-plus"></i> View your cart :</button>
+                            <button class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-shopping-cart"></i><small>{{ cart|length }}</small></button>
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
