@@ -14,10 +14,8 @@ The building blocks are:
 
 ## Database Configuration
 
-Database configuration is stored in `hc/settings.py` and can be overriden
-in `hc/local_settings.py`. The default database engine is SQLite. To use
-PostgreSQL, create `hc/local_settings.py` if it does not exist, and put the
-following in it, changing it as neccessary:
+Database configuration is stored in `config/settings.py`. The default database engine is SQLite. To use
+PostgreSQL, change the DB setting in `config/settings.py`.
 
     DATABASES = {
         'default': {
@@ -41,20 +39,6 @@ For MySQL:
         }
     }
 
-You can also use `zuru/local_settings.py` to read database
-configuration from environment variables like so:
-
-    import os
-
-    DATABASES = {
-        'default': {
-            'ENGINE':   os.env['DB_ENGINE'],
-            'NAME':     os.env['DB_NAME'],
-            'USER':     os.env['DB_USER'],
-            'PASSWORD': os.env['DB_PASSWORD'],
-            'TEST': {'CHARSET': 'UTF8'}
-        }
-    }
 
 
 
